@@ -18,5 +18,5 @@ Make sure that the web server you decide to host the catalog on supports the ver
 
 ## Links
 
-http://studenter.miun.se/~mama2006/moment5/rest/rest.php this is the address where the web service is currently hosted 
+http://studenter.miun.se/~mama2006/moment5/rest/rest.php this is the address where the web service is currently hosted.
 
