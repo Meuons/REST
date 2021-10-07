@@ -1,6 +1,6 @@
 # REST
 
-This is a REST webservice built with object oriented php and with complete CRUD (create, read, update) functionality. It takes data from a database and returns it in JSON format. It makes it possible to access a database with JavaScript. 
+This is a REST webservice built with object oriented php and with complete CRUD (create, read, update, delete) functionality. It takes data from a database and returns it in JSON format. It serves as a connection between a database and the application connected to the service. 
 
 ## Activation
 
