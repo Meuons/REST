@@ -12,7 +12,7 @@ The database to which the web service is connected to can be changed by typing i
 
 This web service protects the database against SQL injections and html tags containing harmful code thanks to the strip_tags and real_escape_string functions in the course.php file. 
 
-The web service can be accessed from all domains which menas it is also possible to use it on and access it from a locla server
+The web service can be accessed from all domains which menas it is also possible to use it on and access it from a local server
 
 Make sure that the web server you decide to host the catalog on supports the version of php that the code uses as this can cause errors otherwise. 
 
