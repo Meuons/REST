@@ -6,6 +6,7 @@ private $host = 'studentmysql.miun.se';
 private $db_name ='mama2006';
 private $username = 'mama2006';
 private $password = 'mx4mtCZ2kR';
+
 private $conn;
 public function connect(){
 
