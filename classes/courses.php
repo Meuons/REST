@@ -5,10 +5,10 @@ class courses {
   private $conn;
 
   public $id;
-  public $name;
-  public $code;
-  public $period;
-  public $syllabus;
+  public $title;
+  public $academy;
+  public $start;
+  public $end;
   
   //Construct a new object with the parameter as the conn property
   function __construct($conn) {
@@ -25,23 +25,24 @@ function read(){
   that are not accepted in the SQL statement*/
 function create($data){
 
-  $name = strip_tags($this->conn->real_escape_string($data->name));
-  $code = strip_tags($this->conn->real_escape_string($data->code));
-  $progression = strip_tags($this->conn->real_escape_string($data->progression));
-  $syllabus = strip_tags($this->conn->real_escape_string($data->syllabus)) ;
+  $title = strip_tags($this->conn->real_escape_string($data->title));
+  $academy = strip_tags($this->conn->real_escape_string($data->academy));
+  $start = strip_tags($this->conn->real_escape_string($data->start));
+  $end = strip_tags($this->conn->real_escape_string($data->end));
 
-  $sql = "INSERT INTO courses(name, code, progression, syllabus)VALUES('$name', '$code', '$progression', '$syllabus');";
+  $sql = "INSERT INTO courses(title, academy, start, end)VALUES('$title', '$academy', '$start', '$end');";
   $result = mysqli_query($this->conn, $sql);
   return $result;
 }
 
 function update($id, $data) :bool{
-  $name = strip_tags($this->conn->real_escape_string($data->name));
-  $code = strip_tags($this->conn->real_escape_string($data->code));
-  $progression = strip_tags($this->conn->real_escape_string($data->progression));
-  $syllabus = strip_tags($this->conn->real_escape_string($data->syllabus)) ;
+  $title = strip_tags($this->conn->real_escape_string($data->title));
+  $academy = strip_tags($this->conn->real_escape_string($data->academy));
+  $start = strip_tags($this->conn->real_escape_string($data->start));
+  $end = strip_tags($this->conn->real_escape_string($data->end));
 
-  $sql = "UPDATE courses SET name = '$name', code = '$code', progression = '$progression', syllabus = '$syllabus' WHERE id='$id';";
+
+  $sql = "UPDATE courses SET title = '$title', academy = '$academy', start = '$start', end = '$end' WHERE id='$id';";
   $result = mysqli_query($this->conn, $sql);
   return $result;
 }
