@@ -2,10 +2,10 @@
 class database{
 //Store the database connection as properties
 
-private $host = '//host address goes here';
-private $db_name ='//database name goes here';
-private $username = '//username goes here';
-private $password = '//password goes here';
+private $host = //host address goes here;
+private $db_name = //database name goes here;
+private $username = //username goes here;
+private $password = //password goes here;
 
 private $conn;
 public function connect(){
