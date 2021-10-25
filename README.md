@@ -12,7 +12,7 @@ The database to which the web service is connected to can be changed by typing i
 
 This web service protects the database against SQL injections and html tags containing harmful code thanks to the strip_tags and real_escape_string functions in the course.php file. 
 
-It is also has funcionality for password protection to prevent unauthorized people from making changes to the database it is connected to.
+It is also has functionality for password protection to prevent unauthorized people from making changes to the database it is connected to.
 
 The web service can be accessed from all domains which menas it is also possible to use it on and access it from a local server.
 
