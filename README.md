@@ -16,8 +16,13 @@ It is also has functionality for password protection to prevent unauthorized peo
 
 The web service can be accessed from all domains which menas it is also possible to use it on and access it from a local server.
 
-For safety reasons the connection credentials to the database have been removed from the database file in this repository. You have to fill in the credenitals to the database you want to connect to where the comments in the file tells you to put them
-
 Make sure that the web server you decide to host the catalog on supports the version of php that the code uses as this can cause errors otherwise. 
 
+## Database setup
 
+For safety reasons the connection credentials to the database have been removed from the database.php file in this repository. 
+You have to fill in the credenitals to the database you want to connect to where the comments in the file tells you to put them.
+
+The tables should be created according to the following diagram https://imgur.com/K6YcUMd in order to work with the web service.
+
+The datatypes for all columns should be VARCHAR except the IDs which should be INT and auto increment.
