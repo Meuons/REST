@@ -18,7 +18,7 @@ public function connect(){
 
 
       if($this->conn->connect_errno > 0){
-        die("Fel vid anslutning: " . $this->conn->connect_error);
+        die("Error connecting: " . $this->conn->connect_error);
     }
 
     return $this->conn;
